@@ -1,0 +1,186 @@
+/* 全体共通スタイル */
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* ヘッダー */
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    color: #222222;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #0078D7;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header nav ul li a.active {
+    color: #ff4500; /* 強調色（オレンジ色） */
+    font-weight: bold;
+    border-bottom: 2px solid #ff4500; /* 下線 */
+}
+
+
+/* メインコンテンツ */
+main {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #222222;
+    border-left: 4px solid #0078D7;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+/* 記事デザイン */
+article {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+}
+
+article:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+article h3 {
+    font-size: 18px;
+    margin-top: 0;
+    color: #0078D7;
+}
+
+article a {
+    color: #0078D7;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    background-color: #ffffff;
+    color: #555555;
+    padding: 10px 0;
+    border-top: 1px solid #eaeaea;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap; /* 必要に応じて折り返し */
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 5px 10px;
+}
+
+/* スマホ (768px以下) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px; /* 文字サイズを調整 */
+    }
+
+    header h1 {
+        font-size: 20px; /* タイトルサイズを縮小 */
+    }
+
+    header nav ul {
+        flex-direction: column; /* 縦並びにする */
+    }
+
+    main {
+        padding: 10px; /* スペースを縮小 */
+    }
+
+    footer {
+        font-size: 12px; /* フッターの文字サイズを縮小 */
+    }
+}
+
+/* タブレット (768px〜1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header nav ul {
+        justify-content: space-around; /* ナビゲーション間のスペースを調整 */
+    }
+
+    main {
+        padding: 15px;
+    }
+}
